@@ -14,7 +14,7 @@ print('Ram' in username)
 a = [1, 2, 3]
 b = [1, 2, 3]
 
-print(a == b)
+print(a in b)
 
 # define 2 numbers and create a simple calculator(+, -, *, /)
 a = 1
