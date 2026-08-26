@@ -1,0 +1,7 @@
+a = input("Enter your age:")
+print(a)
+print(type(a))
+b = int(input("Enter your name"))
+# int_b = int(b)
+print(type(b))
+print(b + 10)

@@ -2,9 +2,10 @@
 
 text = "Python Programming"
 # print out first character
-print(text[0:1])
+# print(text[0:1])
+print(text[0])
 # print out las character
-print(text[17:18])
+print(text[18])
 # print the 3 index character
 print(text[3])
 # print out Python
