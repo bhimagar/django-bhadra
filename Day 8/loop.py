@@ -1,28 +1,55 @@
 # break: loop end
-# despite the while condition being True, break end and the loop
+# despite the while condition being True, break end the loop
 # if a is 2 then end the loop
 
 # a = 0
-# b = 3
+# b = 5
 
 # while a < b:
-#     print("Hello")
+#     print("Hello World")
 #     if a == 2:
-#         break
-#     a += 1 # a = 1 + 1 = 2 + 1 =3
+#       break
+#     a += 1
+# print("Line 30")
 
 # continue loop: execution of all statements in while block
 # incomplete loop: execution of statements half way
 # continue: skip current loop and start new loop
 
+# a = 0
+# b = 5
+
+# while a < b:
+#     a += 1
+#     # print("Hello World")
+#     if a == 2:
+#         continue
+#     print("Hello World", a)
+#     # a += 1
+# print("Line 30")
+
+# nested while loop
+
 a = 0
-b = 3
+c = 0
+b = 5
 
-while a < b:
+while a < b: # parent while block
+    print("Parent Block")
+    # if a == 2:
+    #   break
     a += 1
-    print("Hello World")
-    if a == 2:
-        continue
-    # a += 1 # a = 1 + 1 = 2 + 1 =3
-print("Line 11")
+    while c < b: # child while block
+        print("Child Block")
+        # if a == 2:
+        #     break
+        c += 1
+    # print("out of child block")
+print("Line 30")
 
+# output
+# Parent Block [print]
+# Child Block [print1]
+# Child Block [print2]
+# Parent Block [print]
+# Line 30
